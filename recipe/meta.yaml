@@ -27,17 +27,13 @@ requirements:
     - python >=3.6
 
 test:
-  source_files:
-    - tests
   imports:
     - probed
   commands:
     - pip check
     - probed --help
-    - pytest -vvv --capture=tee-sys tests
   requires:
     - pip
-    - pytest
 
 about:
   home: https://github.com/pyrustic/probed
