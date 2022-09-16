@@ -1,5 +1,5 @@
 {% set name = "probed" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/probed-{{ version }}.tar.gz
-  sha256: ea5fff816cdc041314079724df34a3a666e11e04d899cf1a6a7a1c2f3aa16c40
+  sha256: 106438a23d584d2282d162d7e0683cdbde4c541f81cc5fb369c09280d478d6cd
 
 build:
   number: 0
