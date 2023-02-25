@@ -1,11 +1,11 @@
-About probed
-============
+About probed-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/probed-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyrustic/probed
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/probed-feedstock/blob/main/LICENSE.txt)
 
 Summary: Probed collections
 
