@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/probed-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/probed-{{ version }}.tar.gz
   sha256: 2da4cc175a4d6d7b1baa9fcb313f4d4d61d861f36bd52bb5e4007e517070033c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - probed = probed.__main__:main
@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - wheel
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -34,6 +34,7 @@ test:
     - probed --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pyrustic/probed
